@@ -1,84 +1,53 @@
 .body {
-  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(1, 33, 33));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.885) 15%, rgba(4, 52, 38, 0.416)), url("./../../../assets/images/firePatternMedium.png");
+  background-repeat: repeat;
   width: 100%;
-  height: 1000px;
+  height: 1200px;
+}
 
-  .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: auto;
-    height: auto;
-    top: 100px;
-    animation: fadeIn 1.5s;
-    -webkit-animation: fadeIn 1.5s;
-    -moz-animation: fadeIn 1.5s;
-    -o-animation: fadeIn 1.5s;
-    -ms-animation: fadeIn 1.5s;
-  }
-
-  .opening {
-    width: 640px;
-    height: 360px;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    top: 250px;
-    animation: fadeIn 1.5s;
-    -webkit-animation: fadeIn 1.5s;
-    -moz-animation: fadeIn 1.5s;
-    -o-animation: fadeIn 1.5s;
-    -ms-animation: fadeIn 1.5s;
-    border-style: outset;
-    border-width: 5px;
-    border-color: #7e6612
-
-  }
-
-  .bylethF {
-    width: 600px;
-    height: 545px;
+.section {
+  background-image: url("./../../../assets/images/firePatternMedium.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  .crest {
     position: absolute;
-    top: 390px;
-    left: 50%;
-    display: block;
-    animation: fadeInSidesF 2s;
-    -webkit-animation: fadeInSidesF 2s;
-    -moz-animation: fadeInSidesF 2s;
-    -o-animation: fadeInSidesF 2s;
-    -ms-animation: fadeInSidesF 2s;
+    max-width: 50%;
+    width: 200px;
+    height: 219px;
+    left: 25%;
+    top: 10%;
   }
 
-  .bylethM {
-    width: 600px;
-    height: 545px;
+  .text {
     position: absolute;
-    top: 390px;
-    right: 50%;
-    display: block;
-    animation: fadeInSidesH 2s;
-    -webkit-animation: fadeInSidesH 2s;
-    -moz-animation: fadeInSidesH 2s;
-    -o-animation: fadeInSidesH 2s;
-    -ms-animation: fadeInSidesH 2s;
+    font-family: UNVR;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 20%;
+    font-size: 500%;
+    font-weight: bold;
   }
 
-  @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px);}
-    100% { opacity: 1; transform: translateY(0);}
-  }
-
-  @keyframes fadeInSidesH {
-    0% { opacity: 0; transform: translateX(-50px);}
-    100% { opacity: 1; transform: translateX(0);}
-  }
-
-  @keyframes fadeInSidesF {
-    0% { opacity: 0; transform: translateX(50px);}
-    100% { opacity: 1; transform: translateX(0);}
+  .subtext {
+    position: absolute;
+    font-family: UNVR;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 25%;
+    line-height: 100%;
+    font-size: 400%;
   }
 }
 
+
+@font-face {
+  font-family: UNVR;
+  src: url('./../../../assets/fonts/UNVR66W.TTF');
+}

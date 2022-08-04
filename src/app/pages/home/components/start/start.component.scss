@@ -1,0 +1,130 @@
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 100px;
+  transition: transform .4s;
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+  -moz-animation: fadeIn 1.5s;
+  -o-animation: fadeIn 1.5s;
+  -ms-animation: fadeIn 1.5s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.opening {
+  width: 720px;
+  height: 405px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  top: 250px;
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+  -moz-animation: fadeIn 1.5s;
+  -o-animation: fadeIn 1.5s;
+  -ms-animation: fadeIn 1.5s;
+  border-style: outset;
+  border-width: 5px;
+  border-color: #7e6612
+}
+
+.bylethF {
+  width: 790px;
+  height: 717px;
+  position: absolute;
+  top: 390px;
+  left: 50%;
+  display: block;
+  animation: fadeInSidesF 2s;
+  -webkit-animation: fadeInSidesF 2s;
+  -moz-animation: fadeInSidesF 2s;
+  -o-animation: fadeInSidesF 2s;
+  -ms-animation: fadeInSidesF 2s;
+}
+
+.bylethM {
+  width: 790px;
+  height: 717px;
+  position: absolute;
+  top: 390px;
+  right: 50%;
+  display: block;
+  animation: fadeInSidesH 2s;
+  -webkit-animation: fadeInSidesH 2s;
+  -moz-animation: fadeInSidesH 2s;
+  -o-animation: fadeInSidesH 2s;
+  -ms-animation: fadeInSidesH 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInSidesH {
+  0% { opacity: 0; transform: translateX(-50px);}
+  100% { opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeInSidesF {
+  0% { opacity: 0; transform: translateX(50px);}
+  100% { opacity: 1; transform: translateX(0);}
+}
+
+@media screen and (max-width: 1440px) {
+  .opening {
+    width: 608px;
+    height: 342px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    top: 250px;
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #7e6612
+  }
+
+  .bylethF {
+    width: 674px;
+    height: 612px;
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    display: block;
+    animation: fadeInSidesF 2s;
+    -webkit-animation: fadeInSidesF 2s;
+    -moz-animation: fadeInSidesF 2s;
+    -o-animation: fadeInSidesF 2s;
+    -ms-animation: fadeInSidesF 2s;
+  }
+
+  .bylethM {
+    width: 674px;
+    height: 612px;
+    position: absolute;
+    top: 390px;
+    right: 50%;
+    display: block;
+    animation: fadeInSidesH 2s;
+    -webkit-animation: fadeInSidesH 2s;
+    -moz-animation: fadeInSidesH 2s;
+    -o-animation: fadeInSidesH 2s;
+    -ms-animation: fadeInSidesH 2s;
+  }
+}
