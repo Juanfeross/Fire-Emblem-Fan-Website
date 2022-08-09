@@ -1,0 +1,15 @@
+.fodlan {
+  vertical-align: top;
+  position: relative;
+  width: 35%;
+  height: 35%;
+  left: 10%;
+  text-align: center;
+  scale: 1.0;
+  transition: transform .4s;
+  cursor: pointer;
+}
+
+.fodlan:hover {
+  transform: scale(1.1);
+}

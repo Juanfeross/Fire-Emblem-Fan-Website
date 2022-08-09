@@ -1,0 +1,70 @@
+.frontDisk {
+  vertical-align: top;
+  position: relative;
+  width: 550px;
+  height: 740px;
+  left: 10%;
+  top: 125px;
+  text-align: center;
+  scale: 1.0;
+  border-style: outset;
+  border-width: 3px;
+  border-color: #7e6612
+}
+
+.playlist button{
+  background-image: url("./../../../../../assets/images/whitePattern.png");
+  border: none;
+  font-family: UNVR;
+  font-size: 28px;
+  color: black;
+  padding: 1.5% 24px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  left: 45%;
+  bottom: 500px;
+  margin-left: 50px;
+  transition: transform .08s;
+}
+
+.playlist:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.playlist button:not(:last-child) {
+  border-right: none
+}
+
+.playlist button:hover {
+  transform: scale(1.2);
+}
+
+.audioImage {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  left: 57.5%;
+  bottom: 500px;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #7e6612;
+}
+
+.audioControl {
+  position: absolute;
+  left: 50%;
+  width: 40%;
+}
+
+@font-face {
+  font-family: UNVR;
+  src: url('./../../../../../assets/fonts/UNVR66W.TTF');
+}
+
+
+
+
+

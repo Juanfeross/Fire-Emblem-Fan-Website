@@ -12,6 +12,7 @@
   -moz-animation: fadeIn 1.5s;
   -o-animation: fadeIn 1.5s;
   -ms-animation: fadeIn 1.5s;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -25,7 +26,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
   top: 250px;
   animation: fadeIn 1.5s;
   -webkit-animation: fadeIn 1.5s;
@@ -33,7 +33,7 @@
   -o-animation: fadeIn 1.5s;
   -ms-animation: fadeIn 1.5s;
   border-style: outset;
-  border-width: 5px;
+  border-width: 3px;
   border-color: #7e6612
 }
 

@@ -1,0 +1,15 @@
+.seiros {
+  vertical-align: top;
+  position: relative;
+  width: 35%;
+  height: 35%;
+  text-align: center;
+  left: 55%;
+  scale: 1.0;
+  transition: transform .4s;
+  cursor: pointer;
+}
+
+.seiros:hover {
+  transform: scale(1.1);
+}

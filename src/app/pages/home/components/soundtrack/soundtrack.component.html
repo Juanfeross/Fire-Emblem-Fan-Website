@@ -1,0 +1,32 @@
+<div class="body">
+  <img src="./../../../../../assets/images/frontDisk.png" alt="Front Disk" class="frontDisk">
+  <div class="playlist">
+    <button (click)="playSong()" >Lady of Hresvelg</button>
+    <button (click)="playSongTwo()">Fódlan Winds</button>
+    <button (click)="playSongThree()">The Apex of the World</button>
+  </div>
+
+  <img *ngIf="startAudio" src="./../../../../../assets/images/portraitBylethF.png" alt="Byleth F Portrait" class="audioImage">
+
+  <audio *ngIf="startAudio" id="audioMusic" preload="none" controls="controls" class="audioControl">
+    <source src="./../../../../../assets/audios/openingSong.mp3">
+  </audio>
+
+  <ng-container [ngSwitch]="true">
+    <img *ngSwitchCase="songOne" src="./../../../../../assets/images/portraitBylethF.png" alt="Byleth F Portrait" class="audioImage">
+    <img *ngSwitchCase="songTwo" src="./../../../../../assets/images/portraitBylethM.png" alt="Byleth M Portrait" class="audioImage">
+    <img *ngSwitchCase="songThree" src="./../../../../../assets/images/rhea.png" alt="Rhea Portrait" class="audioImage">
+  </ng-container>
+
+  <ng-container [ngSwitch]="true">
+    <audio *ngSwitchCase="songOne" id="audioMusic" preload="none" controls="controls" class="audioControl" autoplay>
+      <source src="./../../../../../assets/audios/openingSong.mp3">
+    </audio>
+    <audio *ngSwitchCase="songTwo" id="audioMusic" preload="none" controls="controls" class="audioControl" autoplay>
+      <source src="./../../../../../assets/audios/fodlanwinds.mp3">
+    </audio>
+    <audio *ngSwitchCase="songThree" id="audioMusic" preload="none" controls="controls" class="audioControl" autoplay>
+      <source src="./../../../../../assets/audios/apexoftheworld.mp3">
+    </audio>
+  </ng-container>
+</div>
