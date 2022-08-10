@@ -26,16 +26,15 @@
   bottom: 500px;
   margin-left: 50px;
   transition: transform .08s;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #7e6612
 }
 
 .playlist:after {
   content: "";
   clear: both;
   display: table;
-}
-
-.playlist button:not(:last-child) {
-  border-right: none
 }
 
 .playlist button:hover {
