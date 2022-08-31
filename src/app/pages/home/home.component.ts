@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import * as AOS from 'aos';
+import { SoundtrackComponent } from './components/soundtrack/soundtrack.component';
 
 @Component({
   selector: 'app-home',
@@ -14,5 +16,6 @@ export class HomeComponent implements OnInit {
     AOS.init();
     window.addEventListener('load', AOS.refresh)
   }
-
 }
+
+
